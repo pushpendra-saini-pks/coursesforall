@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CoursesForAll</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">CoursesForAll</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://www.netacad.com/dashboard" target="_blank">Online Courses</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Coding Platform</a>
+                    <ul class="dropdown-content">
+                        <li><a href="https://leetcode.com/problemset/" target="_blank">Leetcode</a></li>
+                        <li><a href="https://www.hackerrank.com/dashboard" target="_blank">HackerRank</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://drive.google.com/drive/folders/1VMseASaaWloZpFt3-nILTCGeUSgXxcUh?usp=drive_link" target="_blank">Roadmaps</a></li>
+                <li><a href="https://www.linkedin.com/in/pushpendra-kumar-saini-33251828a/" target="_blank">Connect</a></li>
+            </ul>
+            <div class="user-links">
+                <a href="{{ url_for('register') }}">Register</a>
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('logout') }}">Logout</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Welcome to CoursesForAll</h1>
+            <p>Your gateway to free, quality education in AI, ML, and more.</p>
+        </section>
+        <section class="courses">
+            <h2>Courses</h2>
+            <div class="course-list">
+                <div class="course-item">
+                    <h3>Python programing</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1yWlgJtQprGhaT9gAh7grP7YPihnWU77n?usp=drive_link" target="_blank">Slides / Notes</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg" target="_blank">Find Course 1</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLCr2JQj_VZZpGaw6SL-9_dmrhIRbAm5qv" target="_blank">Find Course 2</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>C++ programing</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1ja9H56RAZZ-dZ1IkbBgaEh6ue2scWEr4" target="_blank">Slides / Notes</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9agpFUAlPFe_VNSlXW5uE0YL" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31YU5Wx1dopka58teWP9aCee" target="_blank">Find Course 2</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Advanced SQL</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1arLAjBw_5cw3mRwdPxjDYoN31m6yYByA?usp=drive_link" target="_blank">Slides / Notes</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLcz9-JSejut-noXS7zEyDx34IJ46zGJaj" target="_blank">Find Course 1</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Professional Communication</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1M4YC3xQwc449EjPD0fJSOWZYdy1kazwA?usp=drive_link" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLm_MSClsnwm-AIEbpyIxoTT8t7UzkHSYC" target="_blank">Find Course 1</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Artificial Intelligence</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1dxC2Dmc2DAfQTkp2rQ5goUyb-xybtH_S?usp=drive_link" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiHGhOHV-nwb0HR5US5GFKFI" target="_blank">Find Course 1</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLV8vIYTIdSnYsdt0Dh9KkD9WFEi7nVgbe" target="_blank">Find Course 2</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLNxx5gyq8aLB-RAQxfyScQLV6wHue-Gj6" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Machine Learning</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1Dwl6UoVW1DS-wwm8pO7UVjUInPo1tdoy?usp=drive_link" target="_blank">Slides / Notes</a> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLCr2JQj_VZZpGaw6SL-9_dmrhIRbAm5qv" target="_blank">Find Course 1</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe" target="_blank">Find Course 3</a></li>
+                    
+                </div>
+                <div class="course-item">
+                    <h3>Mathematics for AI and ML</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1RRahhq6SgNsQR5TXMXu_GUDjPxnmWydb?usp=drive_link" target="_blank">Slides / Notes</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLfFghEzKVmjtZb9G6jvO9PLKvwUvK5avI" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLLy_2iUCG87D1CXFxE-SxCFZUiJzQ3IvE" target="_blank">Find Course 2</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvbYFaaeLY28cWeqV-3vADST" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Deep Learning</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1D9tD-YuNecj4L7VOcKyJMoAtEhsH8j1u?usp=drive_link" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvYuZauWaPlRTC54KxSNLtNn" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLZoTAELRMXVPGU70ZGsckrMdr0FteeRUi" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLCr2JQj_VZZpGaw6SL-9_dmrhIRbAm5qv" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>DBMS</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1iCj7f0O6AGo6f290VhvmOJaoKOinAiH3?usp=drive_link" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiFAN6I8CuViBuCdJgiOkT2Y" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31b33kF46f9aFjoJPOkdlsRc" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLDzeHZWIZsTpukecmA2p5rhHM14bl2dHU" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Data Structure and Algorithms</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1ja9H56RAZZ-dZ1IkbBgaEh6ue2scWEr4" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLu0W_9lII9ahIappRPN0MCAgtOu3lQjQi" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Design and Analysis of Algorithms</h3>
+                    <li><a href="https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLxCzCOWd7aiHcmS4i14bI0VrMbZTUvlTa" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PL-JvKqQx2Atd--1Gs3WB8nmWOWRbEM7WW" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Image and Vision Processing</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1PxxqtJZZPr7F1OAcbe8b_gAZOIdcmkTO?usp=drive_link" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLuv3GM6-gsE08DuaC6pFUvFaDZ7EnWGX8" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLEOl5Hpac2ByN5ZZto22-SnwZoXIzC_T3" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLp_qeggFcJF3JXP1TWUWBHFyPgZaFodxl" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Reinforcement Learning</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1NQo-JSZW1OcRMfYJWwbwBGav5pdRocFV?usp=drive_link" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLZ_sI4f41TGvthD8dA7daahlbLV0yDW0w" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLEAYkSg4uSQ0Hkv_1LHlJtC_wqwVu6RQX" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLZ2ps__7DhBbDiVplM2I9q2XNso1Qfj62" target="_blank">Find Course 3</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>NLP</h3>
+                    <li><a href="#">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvZo7fp5kkIth6nRTeQQsjfX" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLZoTAELRMXVMdJ5sqbCK2LiM0HhQVWNzm" target="_blank">Find Course 2</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLCr2JQj_VZZpGaw6SL-9_dmrhIRbAm5qv" target="_blank">Find NLP Course inside it </a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Generative AI</h3> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLCr2JQj_VZZpipJWtSqRt9T9l4Guh--MN" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLQxDHpeGU14AIu52l2OlIJs9z94yTFR_t" target="_blank">Find Course 2</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Cloud Computing and AWS</h3>
+                    <li><a href="https://drive.google.com/drive/folders/1dxC2Dmc2DAfQTkp2rQ5goUyb-xybtH_S?usp=drive_link" target="_blank">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLL7liBDYa4YaKc07Ht4YWc1ZLSpiUFOnC" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLmPJQXJiMoUWFW2JxRSAfhcsQ0Cr9qbv-" target="_blank">Find Course 2</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Research Methodology and Technical Writing</h3>
+                    <li><a href="#">Slides / Notes</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PL_uaeekrhGzKJBJWiiTnAQzMW--mNkVgK" target="_blank">Find Course 1</a></li>
+                </div>
+                <div class="course-item">
+                    <h3>Visualization Tools</h3>
+                    <li><a href="https://www.youtube.com/playlist?list=PLXwTOG3-tRwgy4lJ9j_CPwpJmr2uCaGH1" target="_blank">Find Course 1</a></li> 
+                    <li><a href="https://www.youtube.com/playlist?list=PLmejDGrsgFyClheDmsfikqOt0no-TKArs" target="_blank">Find Course 2</a></li>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright © 2024 CoursesForAll</p>
+    </footer>
+    
+</body>
+
+</html>
